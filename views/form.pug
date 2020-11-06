@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p= headline
+
+  form(method='POST' action='/new' autocomplete="off")
+
+    label(for="name") Name:
+    input(type="text" id="name" name="name")
+
+    label(for="message") Message:
+    textarea(id="message" name="message" rows="10" cols="30")
+
+    input(type="submit" value="Submit")
