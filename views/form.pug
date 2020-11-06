@@ -3,6 +3,7 @@ extends layout
 block content
   h1= title
   p= headline
+  a(href='/') Back to #{title.toLowerCase()}
 
   form(method='POST' action='/new' autocomplete="off")
 
